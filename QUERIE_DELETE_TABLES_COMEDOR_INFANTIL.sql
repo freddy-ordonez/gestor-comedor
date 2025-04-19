@@ -1,0 +1,27 @@
+DELETE FROM TypeIdentifications;
+DELETE FROM Beneficiaries;
+DELETE FROM Inventory;
+DELETE FROM Activities;
+DELETE FROM Donors;
+DELETE FROM Volunteers;
+DELETE FROM AssignmentActivities;
+DELETE FROM MoneyDonations;
+DELETE FROM InKindDonations;
+DELETE FROM Users;
+DELETE FROM Audits;
+DELETE FROM Modules;
+DELETE FROM ModulesForUser;
+
+DBCC CHECKIDENT ([Beneficiaries], RESEED, 0)
+DBCC CHECKIDENT (Inventory, RESEED, 0)
+DBCC CHECKIDENT (Activities, RESEED, 0)
+DBCC CHECKIDENT (TypeIdentifications, RESEED, 0)
+DBCC CHECKIDENT (AssignmentActivities, RESEED, 0)
+DBCC CHECKIDENT (MoneyDonations, RESEED, 0)
+DBCC CHECKIDENT (InKindDonations, RESEED, 0)
+DBCC CHECKIDENT (Users, RESEED, 0)
+DBCC CHECKIDENT (Audits, RESEED, 0)
+DBCC CHECKIDENT (Modules, RESEED, 0)
+DBCC CHECKIDENT (ModulesForUser, RESEED, 0)
+DBCC CHECKIDENT (Volunteers, RESEED, 0)
+DBCC CHECKIDENT (Donors, RESEED, 0)

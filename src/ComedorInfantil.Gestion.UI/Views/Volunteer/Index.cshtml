@@ -1,0 +1,29 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Voluntarios</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item active">Consulta de Voluntarios</li>
+        </ol>
+
+        <a href="/Volunteer/Create" class="btn btn-dark">
+            Crear Voluntario
+        </a>
+        
+        @* Data table volunteers *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de Voluntarios
+            </div>
+            <div class="card-body">
+                <table id="tblVolunteers">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/volunteers.js"></script>
+}

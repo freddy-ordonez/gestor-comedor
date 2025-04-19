@@ -1,0 +1,38 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Modulos</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/User">Consulta de Usuarios</a></li>
+            <li class="breadcrumb-item active">Mantenimiento de Modulos</li>
+        </ol>
+
+        @* data table modules *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de modulos de <strong id="nameUserModules"></strong>
+            </div>
+            <div class="card-body">
+                <table id="tblModulesUser">
+                </table>
+            </div>
+        </div>
+
+        @* data table modules availability *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de modulos disponibles
+            </div>
+            <div class="card-body">
+                <table id="tblModulesAvailability">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/modules.js"></script>
+}

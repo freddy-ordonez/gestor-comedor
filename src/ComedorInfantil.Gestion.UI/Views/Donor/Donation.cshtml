@@ -1,0 +1,104 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Donaciones</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/Donor">Consulta de Donantes</a></li>
+            <li class="breadcrumb-item active">Consulta de Donaciones</li>
+        </ol>
+
+        <div class="mt-4 mb-0">
+            <button type="button" id="btnCreateInKindDonation" class="btn btn-success">Crear donacion en especie</button>
+        </div>
+
+        @* Form create in kind donation *@
+        <div class="card mt-4" id="toggleCreateInKindDonation" style="display:none">
+            <div class="card-header">
+                <i class="bi bi-plus-square me-1"></i>
+                Crear donacion en especies
+            </div>
+            <div class="card-body">
+                <form id="frmCreateInKindDonation">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <label for="txtProductId">Producto</label>
+                                <select class="form-control" id="txtProductId">
+                                </select>
+                                <span id="errorProductId" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-0">
+                        <button type="submit" id="btnSubmitCreateInKindDonation" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @* data table in kind donations *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de donaciones en especie de <strong id="nameDonorDonations"></strong>
+            </div>
+            <div class="card-body">
+                <table id="tblInKindDonations">
+                </table>
+            </div>
+        </div>
+
+        <div class="mt-4 mb-0">
+            <button type="button" id="btnCreateMoneyDonation" class="btn btn-success">Crear donacion monetaria</button>
+        </div>
+
+        @* Form create money donation *@
+        <div class="card mt-4" id="toggleCreateMoneyDonation" style="display:none">
+            <div class="card-header">
+                <i class="bi bi-plus-square me-1"></i>
+                Crear donacion monetaria
+            </div>
+            <div class="card-body">
+                <form id="frmCreateMoneyDonation">
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="mb-3 mb-md-0">
+                                <label for="txtPorpuseMoney">Proposito</label>
+                                <input class="form-control" id="txtPorpuseMoney" type="text" placeholder="Proposito de la donacion" />
+                                <span id="errorPorpuseMoney" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <div class="mb-3 mb-md-0">
+                                <label for="txtAmountMoney">Cantidad</label>
+                                <input class="form-control" id="txtAmountMoney" type="number" placeholder="Cantidad de donacion" value="0"/>
+                                <span id="errorAmountMoney" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-0">
+                        <button type="submit" id="btnSubmitCreateMoneyDonation" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @* data table money donations *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de donaciones monetarias de <strong id="nameDonorMoneyDonations"></strong>
+            </div>
+            <div class="card-body">
+                <table id="tblMoneyDonations">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/donations.js"></script>
+}

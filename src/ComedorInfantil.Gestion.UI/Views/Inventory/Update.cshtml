@@ -1,0 +1,62 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Inventarios</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/Activity">Consulta de Inventarios</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Inventarios</li>
+    </ol>
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Actualizar Inventario
+        </div>
+        <div class="card-body">
+            <form id="frmUpdateInventory">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtNameInventory">Nombre del producto</label>
+                            <input class="form-control" id="txtNameInventory" type="text" placeholder="Nombre del producto" />
+                            <span id="errorNameInventory" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtQuantityInventory">Cantidad</label>
+                            <input class="form-control" id="txtQuantityInventory" type="number" placeholder="Cantidad del producto" />
+                            <span id="errorQuantityInventory" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtDescriptionInventory">Descripción</label>
+                            <textarea class="form-control" id="txtDescriptionInventory" type="" placeholder="Descripción no mas de 255 caracteres" maxlength="255" rows="10"></textarea>
+                            <span id="errorDescriptionInventory" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtEntryDateInventory">Fecha de Ingreso</label>
+                        <input class="form-control" id="txtEntryDateInventory" type="date" placeholder="Fecha de Inicio" disabled />
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtExpiryDateInventory">Fecha de Expiracion</label>
+                        <input class="form-control" id="txtExpiryDateInventory" type="date" placeholder="Fecha de Expiracion" />
+                        <span id="errorExpiryDateInventory" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitUpdateInventory" class="btn btn-success">Guardar</button>
+                    <a href="/Inventory" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/inventories.js"></script>
+}

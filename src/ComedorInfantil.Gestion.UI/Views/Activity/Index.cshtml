@@ -1,0 +1,52 @@
+﻿<div>
+    <button id="btnModalAssignments" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAssignments" hidden>
+    </button>
+
+    <div class="modal fade" id="modalAssignments" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            Resultado de Asignaciones de la actividad
+                        </div>
+                        <div class="card-body">
+                            <table id="tblAssignments"></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Actividades</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item active">Consulta de Actividades</li>
+        </ol>
+
+        <a href="/Activity/Create" class="btn btn-dark">
+            Crear Actividades
+        </a>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de Actividades
+            </div>
+            <div class="card-body">
+                <table id="tblActivities">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/activities.js"></script>
+    <script src="~/js/assignments.js"></script>
+}
+
+

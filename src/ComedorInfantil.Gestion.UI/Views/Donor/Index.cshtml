@@ -1,0 +1,28 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Donantes</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item active">Consulta de Donantes</li>
+        </ol>
+
+        <a href="/Donor/Create" class="btn btn-dark">
+            Crear Donantes
+        </a>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de Donantes
+            </div>
+            <div class="card-body">
+                <table id="tblDonors">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/donors.js"></script>
+}

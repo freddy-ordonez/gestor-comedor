@@ -1,0 +1,60 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Beneficiarios</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/Beneficiary">Consulta de Beneficiarios</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Beneficiarios</li>
+    </ol>
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Actualizar Beneficiario
+        </div>
+        <div class="card-body">
+            <form id="frmUpdateBeneficiary">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtNameBeneficiary">Nombre</label>
+                            <input class="form-control" id="txtNameBeneficiary" type="text" placeholder="Nombre del beneficiario" />
+                            <span id="errorNameBeneficiary" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtLastNameBeneficiary">Apellidos</label>
+                            <input class="form-control" id="txtLastNameBeneficiary" type="text" placeholder="Apellidos del beneficiario" />
+                            <span id="errorLastNameBeneficiary" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtBirthDateBeneficiary">Fecha Nacimiento</label>
+                        <input class="form-control" id="txtBirthDateBeneficiary" type="date" placeholder="Fecha de Nacimiento" />
+                        <span id="errorBirthDateBeneficiary" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtStatusBeneficiary">Estado</label>
+                        <select class="form-control" id="txtStatusBeneficiary">
+                            <option value="" selected>Selecciona un estado</option>
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                        </select>
+                        <span id="errorStatusBeneficiary" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitUpdateBeneficiary" class="btn btn-success">Guardar</button>
+                    <a href="/Beneficiary" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/beneficiaries.js"></script>
+}

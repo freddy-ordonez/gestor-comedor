@@ -1,0 +1,68 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Donantes</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/Donor">Consulta de Donantes</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Donantes</li>
+    </ol>
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Actualizar Donante
+        </div>
+        <div class="card-body">
+            <form id="frmUpdateDonor">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtNameDonor">Nombre</label>
+                            <input class="form-control" id="txtNameDonor" type="text" placeholder="Nombre del donante" />
+                            <span id="errorNameDonor" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtLastNameDonor">Apellidos</label>
+                            <input class="form-control" id="txtLastNameDonor" type="text" placeholder="Apellidos del donante" />
+                            <span id="errorLastNameDonor" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtPhoneDonor">Telefono</label>
+                            <input class="form-control" id="txtPhoneDonor" type="text" placeholder="Telefono del beneficiario" />
+                            <span id="errorPhoneDonor" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtDonorType">Tipo de Donante</label>
+                        <select class="form-control" id="txtDonorType">
+                            <option value="" selected>Selecciona un tipo</option>
+                            <option value="Individual">Individual</option>
+                            <option value="Empresa">Empresa</option>
+                            <option value="Institucion">Institucion</option>
+                        </select>
+                        <span id="errorDonorType" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <label for="txtAddressDonor">Direccion</label>
+                        <input class="form-control" id="txtAddressDonor" type="text" placeholder="Direccion exacta" />
+                        <span id="errorAddressDonor" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitUpdateDonor" class="btn btn-success">Guardar</button>
+                    <a href="/Donor" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/donors.js"></script>
+}

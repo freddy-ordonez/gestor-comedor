@@ -1,0 +1,71 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Voluntarios</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/Volunteer">Consulta de Voluntarios</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Voluntarios</li>
+    </ol>
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Crear Voluntario
+        </div>
+        <div class="card-body">
+            <form id="frmCreateVolunteer">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtFirstNameVolunteer">Nombre</label>
+                            <input class="form-control" id="txtFirstNameVolunteer" type="text" placeholder="Nombre de el voluntario" />
+                            <span id="errorFirstNameVolunteer" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtLastNameVolunteer">Apellidos</label>
+                            <input class="form-control" id="txtLastNameVolunteer" type="text" placeholder="Apellidos de el voluntario" />
+                            <span id="errorLastNameVolunteer" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtAvailabilityVolunteer">Descripción de Disponibilidad</label>
+                            <textarea class="form-control" id="txtAvailabilityVolunteer" type="" placeholder="Descripción de no mas de 150 caracteres" maxlength="150" rows="7"></textarea>
+                            <span id="errorAvailabilityVolunteer" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtIdentificationVolunteer">Identificacion</label>
+                        <input class="form-control" id="txtIdentificationVolunteer" type="text" placeholder="Numero de identificacion" />
+                        <span id="errorIdentificationVolunteer" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtPhoneVolunteer">Telefono</label>
+                        <input class="form-control" id="txtPhoneVolunteer" type="text" placeholder="Telefono" />
+                        <span id="errorPhoneVolunteer" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtTypeIdentificationVolunteer">Tipo de Identificacion</label>
+                        <select class="form-control" id="txtTypeIdentificationVolunteer">
+                        </select>
+                        <span id="errorTypeIdentificationVolunteer" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitCreateVolunteer" class="btn btn-success">Guardar</button>
+                    <a href="/Volunteer" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/volunteers.js"></script>
+}

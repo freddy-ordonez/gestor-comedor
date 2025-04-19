@@ -1,0 +1,57 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Actividades</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/Activity">Consulta de Actividades</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Actividades</li>
+    </ol>
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Crear Actividad
+        </div>
+        <div class="card-body">
+            <form id="frmCreateActivity">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtNameActivity">Nombre</label>
+                            <input class="form-control" id="txtNameActivity" type="text" placeholder="Nombre actividad" />
+                            <span id="errorNameActivity" class="text-danger"></span>
+                        </div>
+                    </div>    
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtDescriptionActivity">Descripción</label>
+                            <textarea class="form-control" id="txtDescriptionActivity" type="" placeholder="Descripción no mas de 255 caracteres" maxlength="255" rows="10"></textarea>
+                            <span id="errorDescriptionActivity" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtStartDateActivity">Fecha de Inicio</label>
+                        <input class="form-control" id="txtStartDateActivity" type="date" placeholder="Fecha de Inicio" />
+                        <span id="errorStartDateActivity" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtEndDateActivity">Fecha de Finalización</label>
+                        <input class="form-control" id="txtEndDateActivity" type="date" placeholder="Fecha de Finalización" />
+                        <span id="errorEndDateActivity" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitCreateActivity" class="btn btn-success">Guardar</button>
+                    <a href="/Activity" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/js/activities.js"></script>
+}
+

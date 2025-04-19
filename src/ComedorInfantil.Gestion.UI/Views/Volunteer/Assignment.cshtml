@@ -1,0 +1,38 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta Asignaciones</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item"><a href="/Volunteer">Consulta de Voluntarios</a></li>
+            <li class="breadcrumb-item active">Consulta de Asignaciones</li>
+        </ol>
+
+        @* data table Assignments *@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de asignaciones de <strong id="nameVolunteer"></strong>
+            </div>
+            <div class="card-body">
+                <table id="tblAssignmentsVolunteer">
+                </table>
+            </div>
+        </div>
+
+        @* data table activities availible*@
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de actividades
+            </div>
+            <div class="card-body">
+                <table id="tblActivitiesVolunteer">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/volunteers.js"></script>
+}

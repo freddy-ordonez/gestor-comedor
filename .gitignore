@@ -1,0 +1,108 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated_Code/
+
+# Backup & log files
+*.log
+*.tlog
+*.bak
+*.tmp
+
+# Web related
+node_modules/
+wwwroot/lib/
+dist/
+.env
+
+# Rider
+.idea/
+*.sln.iml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.dbmdl
+*.pdb
+*.mdb
+*.cache
+*.vshost.*
+*.pidb
+*.svclog
+*.scc
+
+# Azure settings
+app.publish/
+PublishProfiles/
+.vspscc
+
+# Docker
+Dockerfile.*
+docker-compose.*
+
+# Secrets
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+Properties/launchSettings.json
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Sonarqube
+.sonar/
+
+# StyleCop
+StyleCopReport.xml
+
+# Reports
+*.rdlc
+
+# Local database files
+*.mdf
+*.ldf
+
+# Logs
+*.log
+
+# EF Migrations
+Migrations/
+
+# Others
+*.sqlite
+*.sqlite3

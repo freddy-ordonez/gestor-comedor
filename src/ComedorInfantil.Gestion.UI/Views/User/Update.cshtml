@@ -1,0 +1,94 @@
+﻿<div class="container-fluid px-4">
+    <h1 class="mt-4">Mantenimiento de Usuarios</h1>
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+        <li class="breadcrumb-item"><a href="/User">Consulta de Usuarios</a></li>
+        <li class="breadcrumb-item active">Mantenimiento de Usuarios</li>
+    </ol>
+
+    <div class="mt-4 mb-0">
+        <button type="button" id="btnUpdatePasswordUser" class="btn btn-success">Actualizar contraseña</button>
+    </div>
+
+    @* Form update password user *@
+    <div class="card mt-4" id="toggleUpdatePasswordUser" style="display:none">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Actualizar contraseña
+        </div>
+        <div class="card-body">
+            <form id="frmUpdatePasswordUser">
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtPasswordUser">Contraseña</label>
+
+                        <div class="position-relative">
+                            <input class="form-control pe-5" id="txtPasswordUser" type="password" placeholder="Contraseña 8 caracteres" />
+                            <span class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;" id="togglePassword">
+                                <i class="bi bi-eye" id="iconPassword"></i>
+                            </span>
+                        </div>
+
+                        <span id="errorPasswordUser" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitUpdatePasswordUser" class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="card my-4">
+        <div class="card-header">
+            <i class="bi bi-plus-square me-1"></i>
+            Actualizar Usuario
+        </div>
+
+        @* Form update user *@
+        <div class="card-body">
+            <form id="frmUpdateUser">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtFirstNameUser">Nombre</label>
+                            <input class="form-control" id="txtFirstNameUser" type="text" placeholder="Nombre del usuario" />
+                            <span id="errorFirstNameUser" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 mb-md-0">
+                            <label for="txtLastNameUser">Apellidos</label>
+                            <input class="form-control" id="txtLastNameUser" type="text" placeholder="Apellidos del usuario" />
+                            <span id="errorLastNameUser" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtEmailUser">Correo</label>
+                        <input class="form-control" id="txtEmailUser" type="text" placeholder="Correo Electronico" />
+                        <span id="errorEmailUser" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="txtStatusUser">Correo</label>
+                        <select class="form-control" id="txtStatusUser">
+                            <option value="" selected>Selecciona una opcion</option>
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                        </select>
+                        <span id="errorStatusUser" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="mt-4 mb-0">
+                    <button type="submit" id="btnSubmitUpdateUser" class="btn btn-success">Guardar</button>
+                    <a href="/User" class="btn btn-outline-dark">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/users.js"></script>
+}

@@ -1,0 +1,28 @@
+﻿<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Consulta de Beneficiarios</h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="/Home">Panel de Inicio</a></li>
+            <li class="breadcrumb-item active">Consulta de Beneficiarios</li>
+        </ol>
+
+        <a href="/Beneficiary/Create" class="btn btn-dark">
+            Crear Beneficiarios
+        </a>
+
+        <div class="card my-4">
+            <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                Resultado de Beneficiaros
+            </div>
+            <div class="card-body">
+                <table id="tblBeneficiaries">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/beneficiaries.js"></script>
+}
