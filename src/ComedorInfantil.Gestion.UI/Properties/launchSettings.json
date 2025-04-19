@@ -15,10 +15,7 @@
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5186",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "local",
-        "clientId": "18ea91e7-5264-41b9-85fb-40d01615ce47",
-        "tenantId": "154cc482-5090-4cd4-ac6c-b289f14bea00",
-        "clientKey": "XxI8Q~Q2015WiBPosb..zqEFMGDaA5L2uD4A5b-Q"
+        "ASPNETCORE_ENVIRONMENT": "Developer"
       }
     },
     "https": {
@@ -27,20 +24,14 @@
       "launchBrowser": true,
       "applicationUrl": "https://localhost:7289;http://localhost:5186",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "local",
-        "clientId": "18ea91e7-5264-41b9-85fb-40d01615ce47",
-        "tenantId": "154cc482-5090-4cd4-ac6c-b289f14bea00",
-        "clientKey": "XxI8Q~Q2015WiBPosb..zqEFMGDaA5L2uD4A5b-Q"
+        "ASPNETCORE_ENVIRONMENT": "Developer"
       }
     },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "local",
-        "clientId": "18ea91e7-5264-41b9-85fb-40d01615ce47",
-        "tenantId": "154cc482-5090-4cd4-ac6c-b289f14bea00",
-        "clientKey": "XxI8Q~Q2015WiBPosb..zqEFMGDaA5L2uD4A5b-Q"
+        "ASPNETCORE_ENVIRONMENT": "Developer"
       }
     }
   }
