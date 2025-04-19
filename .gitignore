@@ -1,6 +1,9 @@
 ## Ignore Visual Studio temporary files, build results, and
 ## user-specific files
 
+# Ignorar archivos de configuración locales
+**/Properties/launchSettings.json
+
 # Build results
 [Bb]in/
 [Oo]bj/
