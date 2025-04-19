@@ -14,7 +14,7 @@ if(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "local")
 {
     string tenantId = Environment.GetEnvironmentVariable("tenantId") ?? string.Empty;
     string clientId = Environment.GetEnvironmentVariable("clientId") ?? string.Empty;
-    string clientSecret = Environment.GetEnvironmentVariable("clientSecret") ?? string.Empty;
+    string clientSecret = Environment.GetEnvironmentVariable("clientKey") ?? string.Empty;
 
     var tokenCredentials = new ClientSecretCredential(tenantId, clientId, clientSecret);
     builder.Configuration.AddAzureKeyVault(new Uri(keyVaultUrl), tokenCredentials);
