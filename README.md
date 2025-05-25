@@ -1,6 +1,10 @@
 # 🍽️ Gestor Comedor Infantil
 
-Sistema web para la gestión integral de comedores infantiles, permitiendo administrar beneficiarios, donaciones, voluntariado, actividades, inventarios y más.
+Sistema web para la gestión integral de comedores infantiles, permitiendo administrar beneficiarios, donaciones, voluntariado, actividades, inventarios y más.  
+
+Credenciales para demo:  
+Correo Electronico: admin@example.com  
+Contraseña: 12345678  
 
 [Gestor de Comedor Infantil WEB](https://comedor-web-01-cgbhbugmezcqcsaq.eastus-01.azurewebsites.net/)  
 [Gestor de Comedor Infantil API](https://comedor-webapp-backend-01-egdpetcwc7fmb7c6.eastus-01.azurewebsites.net/index.html)
